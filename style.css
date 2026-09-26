@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: #f5f6f8;
+  font-family: Arial, sans-serif;
+}
+
+/* 
+   GAME CARD
+ */
+
+.game-section {
+  width: 100%;
+  max-width: 520px;
+  min-height: 500px;
+  padding: 45px 55px 35px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 
+   HANDS
+ */
+
+.hands-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+}
+
+.hand {
+  width: 125px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hand img {
+  width: 115px;
+  height: 100px;
+  object-fit: contain;
+  /* transform: rotate(90deg); */
+}
+.hand2 img {
+  width: 115px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* 
+   TITLE
+ */
+
+.game-title {
+  margin-top: 25px;
+  color: #7130c9;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* 
+   RESULT
+ */
+
+.game-result {
+  margin-top: 8px;
+  min-height: 18px;
+  color: #7130c9;
+  font-size: 13px;
+}
+
+/* 
+   CHOICES
+ */
+
+.choices {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 35px;
+}
+
+.choice-button {
+  width: 70px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.choice-button:hover {
+  transform: translateY(-5px);
+}
+
+.choice-button:active {
+  transform: scale(0.94);
+}
+
+.choice-button img {
+  width: 58px;
+  height: 58px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.choice-button span {
+  display: block;
+  margin-top: 8px;
+  color: #b89add;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* 
+   SCORE
+ */
+
+.score-area {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 32px;
+  padding-top: 15px;
+  border-top: 1px solid #eeeeee;
+}
+
+.score-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.score-box span {
+  color: #999999;
+  font-size: 12px;
+}
+
+.score-box strong {
+  color: #7130c9;
+  font-size: 15px;
+}
+
+/* 
+   RESPONSIVE
+ */
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  .game-section {
+    max-width: 390px;
+    min-height: 450px;
+    padding: 38px 25px 30px;
+  }
+
+  .hands-area {
+    padding: 0 10px;
+  }
+
+  .hand {
+    width: 105px;
+    height: 90px;
+  }
+
+  .hand img {
+    width: 95px;
+    height: 85px;
+  }
+
+  .game-title {
+    font-size: 27px;
+  }
+
+  .choices {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .game-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hands-area {
+    padding: 0;
+  }
+
+  .choices {
+    gap: 15px;
+  }
+}
